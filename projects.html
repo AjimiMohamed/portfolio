@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Projects</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Global Styles */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+
+        .poc-container {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .desc-container {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+        }
+
+        .project h2 {
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+
+        .project p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin-top: 0;
+        }
+
+        .project-link {
+            display: block;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        .project-link a {
+            color: #333;
+            background-color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .project-link a:hover {
+            background-color: #555;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                flex-direction: column;
+            }
+
+            .poc-container,
+            .desc-container {
+                padding: 0;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>My Projects</h1>
+        <section class="project">
+            <div class="poc-container">
+                <img src="images/reqana.png" alt="Project 1 Proof of Concept">
+            </div>
+            <div class="desc-container">
+                <h2>Project 1: Requirement Analysis</h2>
+                <p>
+                    Our group was tasked with building a student administration website for a client in our requirement analysis class. Our objective was to compile all the essential specifications and produce a thorough plan for developing the website in accordance with the client's requirements.
+                    Throughout the project, we maintained regular communication with the client, sharing our progress and gathering feedback.</p>
+                <p>
+                    We used tools like Trello , StarUML and Axure to keep track of our tasks and make sure that everyone was on the same page. We created a plan for building the website, including a detailed project timeline, a breakdown of tasks, and a list of deliverables.I was in charge of "managing the timeslots" part of the website.
+                </p>
+                <p>
+                    Overall, this project allowed us to apply the knowledge we gained in our requirement analysis class to a real-world scenario. It also gave us the opportunity to work collaboratively as a team and learn how to effectively communicate with a client to gather requirements and build a website that met their needs.
+                </p>
+                <p>Technologies used: Axure, StarUML, SQL , PHP</p>
+                <a href="https://github.com/itfactory-tm/2023-ProjectPHP-503">View Code</a>
+            </div>
+        </section>
+
+        <section class="project">
+            <div class="poc-container">
+                <iframe  width="560" height="446" src="https://www.youtube.com/embed/KG7npwEFTAU"></iframe>
+                
+            </div>
+            <div class="desc-container">
+                <h2>Project 2: Budget Manager Desktop Application</h2>
+                <p>In this project for my DevOps and Security course, I built a Budget Manager desktop application using C# and XAML. The project's goal was to gain knowledge about how to deploy and secure the application in a production environment using DevOps and security principles.</p>
+                <p>
+                    I started by utilizing XAML to create the application's user interface with the intention of developing a simple and user-friendly interface for managing personal finances. I then wrote the application code using C# implementing features such as the ability to add delete and update income and expenses.</p>
+                <p>
+                    Next, I used GitHub Action to create a CI/CD pipeline that automatically built, tested, and deployed the application to a target environment. This made it possible for me to guarantee that the application was constantly updated and operating as intended.</p>
+                <p>Technologies used: C#, XAML, GitHub Actions</p>
+                <a href="https://github.com/AjimiMohamed/Money_Managers">View Code</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mohamed Ajimi</p>
+    </footer>
+</body>
+
+</html>
