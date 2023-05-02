@@ -1,115 +1,601 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Welcome to My Website</title>
-    <style>
-        /* CSS styles go here */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        h1 {
-            margin: 0;
-            font-size: 30px;
-             text-align: center;
-            margin-bottom: 20px;
-        }
+    <title>Mohamed Ajimi Portfolio</title>
 
-        h2 {
-            margin-top: 0;
-        }
+    <meta name="description" content="">
+    <meta name="author" content="Mohamed Ajimi">
+    <meta name="keywords" content="">
 
-      nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
 
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Varela" rel="stylesheet">
 
-        nav ul li {
-            display: inline-block;
-        }
+    <!-- Favicon
+    ================================================== -->
+    <link rel="icon" sizes="16x16" href="assets/img/favicon.ico">
+    <link rel="manifest" href="assets/img/manifest.json">
+    <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
 
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px;
-        }
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
-        nav ul li a:hover {
-            background-color: #555;
-        }
+    <!-- Font Awesome core CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
 
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-        p {
-            font-size: 18px;
-            line-height: 1.5;
-        }
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-        blockquote {
-            font-size: 24px;
-            font-style: italic;
-            margin: 30px 0;
-            padding-left: 20px;
-            border-left: 5px solid #333;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-        }
-
-    </style>
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-         <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-        </ul>
-    </nav>
-    </header>
-   
-    <main>
-        <blockquote>
-            "Everybody should learn to program a computer because it teaches you how to think." – Steve Jobs
-        </blockquote>
-        <h2>Introduction</h2>
-        <p>Hello! My name is Mohamed Ajimi , i'am a artificial intelligence student from Tunisia currently based in Belgium. I'am obsessed with creating things and even more obsessed with making them better to help improve the quality of life of millions of people. My love for mathematics and programming has pushed me in the path of an AI and machine learning carreer. My interests however extend beyond this as i love application developement and game developement. My goal for these couple of years, is to learn the right way to code and create projects to extend my portfolio as well as my knowledge in multiple programming languages and frameworks.</p>
-    </main>
-    <footer>
-        <p>Copyright &copy; 2023</p>
-    </footer>
+
+    <!-- Hero Section, Background Image change in css -->
+    <div id="top" class="hero background-overlay">
+
+        <!-- Name & Description -->
+        <div class="hero-content">
+            <h1>I am Mohamed Ajimi</h1>
+            <p class="hero-job"><span>I'M An ACS02 Student at Thomas More</span></p>
+            <p class="hero-job-desc">Talk is cheap. Show me the code. ― Linus Torvalds </p>
+
+        </div><!-- /.hero-content -->
+
+        <div class="hero-arrow page-scroll home-arrow-down">
+            <a class="" href="#intro"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+        </div><!-- /.hero-arrow -->
+
+    </div><!-- /.hero -->
+    <!-- End Hero -->
+
+    <!-- Header -->
+    <header id="masthead" class="site-header">
+        <nav id="primary-navigation" class="site-navigation" data-spy="affix">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-perfect-collapse" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Name -->
+                    <div class="page-scroll site-logo">
+                        <a href="#top">MOHAMED</a>
+                    </div>
+
+                </div><!-- /.navbar-header -->
+
+                <div class="main-menu collapse navbar-collapse" id="portfolio-perfect-collapse">
+
+                    <!-- Navigation -->
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="page-scroll"><a href="#top">Home</a></li>
+                        <li class="page-scroll"><a href="#intro">About</a></li>
+                        <li class="page-scroll"><a href="#services">Projects</a></li>
+                        <li class="page-scroll"><a href="#history">CV</a></li>
+
+
+                    </ul><!-- /.navbar-nav -->
+
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav><!-- /.primary-navigation -->
+    </header><!-- /#header -->
+    <!-- End Header -->
+
+    <!-- Main content -->
+    <main id="main" class="site-main">
+
+        <!-- Hello section -->
+        <section class="site-section section-hello" id="intro">
+            <div class="container">
+                <h2>HELLO &amp; WELCOME</h2>
+                <p class="section-subtitle"><span>THIS IS MY PORTFOLIO.</span></p>
+                <div class="row">
+                    <div class="col-sm-4">
+
+                        <div class="main-service text-right">
+                            <div class="rectangle">
+                                <i class="fa fa-comments" aria-hidden="true"></i>
+                            </div>
+                            <h3>INTEREST</h3>
+                            <p>My love for mathematics and programming has pushed me in the path of an AI and machine learning carreer.</p>
+                        </div><!-- /.main-service -->
+                        <div class="main-service text-right">
+                            <div class="rectangle">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </div><!-- /.rectangle -->
+                            <h3>FUTURE GOALS</h3>
+                            <p> My goal for these couple of years, is to learn the right way to code and create projects to extend my portfolio as well as my knowledge in multiple programming languages and frameworks.</p>
+                        </div><!-- /.main-service -->
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="big-rectangle">
+                            <img src="assets/img/me.png" alt="">
+                        </div><!-- /.big-rectangle -->
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="main-service text-left">
+                            <div class="rectangle">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </div>
+                            <h3>BIO</h3>
+                            <p>My name is Mohamed Ajimi , i'am a artificial intelligence student from Tunisia currently based in Belgium. I'am obsessed with creating things and even more obsessed with making them better to help improve the quality of life of millions of people.</p>
+                        </div><!-- /.main-service -->
+                        <div class="main-service text-left">
+                            <div class="rectangle">
+                                <i class="fa fa-list" aria-hidden="true"></i>
+                            </div><!-- /.rectangle -->
+                            <h3>HOBBIES</h3>
+                            <p>My interests however extend beyond this as i love application developement and game developement.</p>
+                        </div><!-- /.main-service -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.section-hello -->
+        <!-- End Hello section -->
+
+        <!-- Quote section -->
+        <section class="section-background section-quote background-overlay text-center">
+            <div class="container">
+                <p>
+                    "Everybody should <span>learn to program a computer</span> because it teaches you <span>how to think</span>." – Steve Jobs</p>
+            </div>
+        </section><!-- /.section-quote -->
+        <!-- End Quote section -->
+
+
+
+        <!-- Skills section -->
+        <section class="site-section section-skills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>SKILLS</h2>
+                        <div class="progress-group">
+                            <p>Web design</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="60">
+                                </div>
+                            </div><!-- /.progress -->
+                        </div><!-- /.progress-group -->
+
+                        <div class="progress-group">
+                            <p>Python</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="80">
+                                </div>
+                            </div><!-- /.progress -->
+                        </div><!-- /.progress-group -->
+
+                        <div class="progress-group">
+                            <p>Java</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="70">
+                                </div>
+                            </div><!-- /.progress -->
+                        </div><!-- /.progress-group -->
+
+                        <div class="progress-group">
+                            <p>C#/.NET</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="75">
+                                </div>
+                            </div><!-- /.progress -->
+                        </div><!-- /.progress-group -->
+
+                        <div class="progress-group">
+                            <p>IOT</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="65">
+                                </div>
+                            </div><!-- /.progress -->
+                        </div><!-- /.progress-group -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.section-skills -->
+        <!-- End Skills section -->
+
+        <!-- Services section -->
+        <section class="site-section section-services" id="services">
+
+            <div class="container-fluid">
+                <h2>MY PROJECTS</h2>
+                <p class="section-subtitle"><span>Take a look at my personal projects</span></p>
+            </div>
+
+            <div class="container">
+
+                <div class="carousel slide" id="services-carousel">
+
+                    <div class="item-controls text-center">
+                        <a href="#services-carousel" class="left btn carousel-control" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i>
+                        </a>
+                        <a href="#services-carousel" class="right btn carousel-control" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                    </div><!-- /.item-controls -->
+
+                    <div class="carousel-indicators nav-tabs text-center">
+                        <a data-target="#services-carousel" href="#" data-slide-to="0" class="active">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <i class="fa fa-laptop" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="hidden-xs">Requirement Analysis</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                        <a data-target="#services-carousel" href="#" data-slide-to="1">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <i class="fa fa-code" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="hidden-xs">Web development</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                        <a data-target="#services-carousel" href="#" data-slide-to="2">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="hidden-xs">WPF Application C#</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                        <a data-target="#services-carousel" href="#" data-slide-to="3">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="hidden-xs">Internet Of Things</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                        <a data-target="#services-carousel" href="#" data-slide-to="4">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="hidden-xs">Social Media</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                    </div><!-- /.carousel-indicators -->
+
+
+                    <div class="carousel-inner">
+                        <!-- Item 1 -->
+                        <div id="item1" class="item tab-pane active">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="service-info">
+                                        <h3 class="service-title">Requirement Analysis</h3>
+                                        <p>Our group was tasked with building a Job Training website for a client in our requirement analysis class. Our objective was to compile all the essential specifications and produce a thorough plan for developing the website in accordance with the client's requirements. Throughout the project, we maintained regular communication with the client, sharing our progress and gathering feedback.</p>
+                                        <p>
+                                            Overall, this project allowed us to apply the knowledge we gained in our requirement analysis class to a real-world scenario. It also gave us the opportunity to work collaboratively as a team and learn how to effectively communicate with a client to gather requirements and build a website that met their needs.</p>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <img src="assets/img/reana.png" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                        <!-- Item 2 -->
+                        <div id="item2" class="item tab-pane">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="service-info">
+                                        <h3 class="service-title">PHP Job Training Application</h3>
+                                        <p>After completing the requirement analysis and planning phase, our group began the implementation phase of the Job training Application for our PHP Preject course.
+                                        </p>
+
+                                        <p> Our group implemented the website in PHP using the Laravel framework. We divided the project into components and communicated regularly with the client. The website included a user-friendly interface for students to search and book interviews with companies. We adhered to best practices and conducted several rounds of testing to ensure functionality and bug-free operation. Overall, the project was a valuable experience that taught us about collaboration, communication, and web development best practices. </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <img src="assets/img/php.png" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                        <!-- Item 3 -->
+                        <div id="item3" class="item tab-pane">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="service-info">
+                                        <h3 class="service-title"> Budget Manager Application</h3>
+                                        <p>In this project for my DevOps and Security course, I built a Budget Manager desktop application using C# and XAML. The project's goal was to gain knowledge about how to deploy and secure the application in a production environment using DevOps and security principles.</p>
+                                        <p>
+                                            I started by utilizing XAML to create the application's user interface with the intention of developing a simple and user-friendly interface for managing personal finances. I then wrote the application code using C# implementing features such as the ability to add delete and update income and expenses.
+                                        </p>
+                                        <p>
+                                            Next, I used GitHub Action to create a CI/CD pipeline that automatically built, tested, and deployed the application to a target environment. This made it possible for me to guarantee that the application was constantly updated and operating as intended.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <iframe width="536" height="271" src="https://www.youtube.com/embed/KG7npwEFTAU"></iframe>
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                        <!-- Item 4 -->
+                        <div id="item4" class="item tab-pane">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="service-info">
+                                        <h3 class="service-title">Weather Station</h3>
+                                        <p>Our IT Essentials project involved building a weather station using an ESP32 and multiple sensors (such as temperature, humidity, and pressure) while coding in C#.</p>
+
+                                        <p> Throughout the project, I focused on learning how to use electrical circuits and code effectively in C# as it was my first experience. </p>
+
+                                        <p>
+                                            Overall, the project gave me the opportunity to apply the knowledge i gained in our IT Essentials class to a real-world scenario, while also learning valuable skills in electrical engineering and coding."</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <img src="assets/img/IOTproject.jpg" class="img-responsive" alt="" width="536" height="271">
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                        <!-- Item 5 -->
+                        <div id="item5" class="item tab-pane">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="service-info">
+                                        <h3 class="service-title">Sorting App</h3>
+                                        <p>Sorting App is a personal project I developed to demonstrate     different sorting algorithms visually using Python's tkinter library. The project consists of several well-known sorting algorithms, such as bubble sort and quicksort, that the user can select and run with various input sizes and data types.
+                                        </p>
+                                        <p>
+                                            I tested each algorithm with different input sizes and data types to ensure their accuracy and efficiency. The results of the sorting process are displayed using a graphical user interface, which includes a visualization area that shows each step of the sorting process.</p>
+                                        <p>
+                                            Through this project, I gained a better understanding of Python programming, the intricacies of different sorting algorithms, and user interface design.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <iframe width="536" height="271" src="https://www.youtube.com/watch?v=ZXJ58XX6Ff8"></iframe>
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                    </div><!-- /.carousel-inner -->
+                </div><!-- /.carousel -->
+            </div>
+        </section><!-- /.section-services -->
+        <!-- End Services section -->
+
+
+
+
+        <!-- History section -->
+        <section class="section-history" id="history">
+            <div class="container">
+                <div class="text-center section-diff-title">
+                    <h2><a href="CV_MohamedAjimi.pdf" target="_blank" rel="noopener noreferrer">A Look Back At My curriculum Vitae (View CV)</a></h2>
+                    <p><a href="CV_MohamedAjimi.pdf" download="CV_Mohamedajimi">Download CV</a></p>
+                       
+      
+
+                </div>
+                <!-- Timeline -->
+                <ul class="timeline">
+                    <!-- Timeline badge -->
+                    <li class="timeline-start">
+                        <div class="rectangle"><span>2016</span></div>
+                    </li><!-- /.timeline-start -->
+
+                    <!-- Timeline job & description  -->
+                    <li>
+                        <div class="rectangle timeline-rectangle"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <div class="timeline-date">
+                                    <p>30 Jun</p>
+                                </div><!-- /.timeline-date -->
+                                <div class="timeline-position">
+                                    <p>Electrical Engeneering Degree</p>
+                                </div><!-- /.timeline-position -->
+                            </div><!-- /.timeline-heading -->
+                            <div class="timeline-body">
+                                <div class="timeline-body-thumb">
+                                    <img src="assets/img/ensit.jpg" class="img-res" alt="">
+                                </div><!-- /.timeline-body-thumb -->
+                                <p>I got my Electrical Engeneering Degree from ENSIT with a Very Good note from the jury.</p>
+                            </div><!-- /.timeline-body -->
+                        </div><!-- /.timeline-panel -->
+                    </li>
+
+                    <!-- Timeline badge -->
+                    <li class="timeline-start">
+                        <div class="rectangle"><span>2017</span></div>
+                    </li><!-- /.timeline-start -->
+
+                    <!-- Timeline job & description, inverted  -->
+                    <li class="timeline-inverted">
+                        <div class="rectangle timeline-rectangle"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <div class="timeline-position">
+                                    <p>First Job</p>
+                                </div><!-- /.timeline-position -->
+                                <div class="timeline-date">
+                                    <p>1 Jan</p>
+                                </div><!-- /.timeline-date -->
+                            </div><!-- /.timeline-heading -->
+                            <div class="timeline-body">
+                                <div class="timeline-body-thumb">
+                                    <img src="assets/img/valeo.png" class="img-res" alt="">
+                                </div><!-- /.timeline-body-thumb -->
+                                <p>I started my first job as an Electrical Engineer in Valeo Tunisia.</p>
+                            </div><!-- /.timeline-body -->
+                        </div><!-- /.timeline-panel -->
+                    </li><!-- /.timeline-inverted -->
+                    <li class="timeline-start">
+                        <div class="rectangle"><span>2019</span></div>
+                    </li><!-- /.timeline-start -->
+                    <!-- Timeline job & description  -->
+                    <li>
+                        <div class="rectangle timeline-rectangle"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <div class="timeline-date">
+                                    <p>26 Feb</p>
+                                </div><!-- /.timeline-date -->
+                                <div class="timeline-position">
+                                    <p>Second Job</p>
+                                </div><!-- /.timeline-position -->
+                            </div><!-- /.timeline-heading -->
+                            <div class="timeline-body">
+                                <div class="timeline-body-thumb">
+                                    <img src="assets/img/oddo.jpg" class="img-res" alt="">
+                                </div><!-- /.timeline-body-thumb -->
+                                <p>I left Valeo and started a new adventure in ODDO BHF Tunisia.</p>
+                            </div><!-- /.timeline-body -->
+                        </div><!-- /.timeline-panel -->
+                    </li>
+                    <li class="timeline-start">
+                        <div class="rectangle"><span>2022</span></div>
+                    </li><!-- /.timeline-start -->
+                    <!-- Timeline job & description, inverted  -->
+                    <li class="timeline-inverted">
+                        <div class="rectangle timeline-rectangle"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <div class="timeline-position">
+                                    <p>Thomas More</p>
+                                </div><!-- /.timeline-position -->
+                                <div class="timeline-date">
+                                    <p>16 Feb</p>
+                                </div><!-- /.timeline-date -->
+                            </div><!-- /.timeline-heading -->
+                            <div class="timeline-body">
+                                <div class="timeline-body-thumb">
+                                    <img src="assets/img/tm.png" class="img-res" alt="">
+                                </div><!-- /.timeline-body-thumb -->
+                                <p>I ecided to change carriers and go into programming and applied for Thomas More Belgium.</p>
+                            </div><!-- /.timeline-body -->
+                        </div><!-- /.timeline-panel -->
+                    </li><!-- /.timeline-inverted -->
+                    <!-- Timeline Badge  -->
+                    <li class="timeline-end">
+                        <div class="rectangle"><span>More</span></div>
+                    </li><!-- /.timeline-end -->
+                </ul><!-- /.timeline -->
+            </div>
+        </section><!-- /.section-history -->
+        <!-- End History section -->
+
+
+
+        <!-- Social Networks section -->
+        <section class="section-networks blue-bg">
+            <div class="container">
+                <a href="https://www.facebook.com/hamma.ladjimi" class="rectangle">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com/k0bra_VAL" class="rectangle">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://github.com/AjimiMohamed" class="rectangle">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mohamed-ajimi-4b4863262/" class="rectangle">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </div>
+        </section><!-- /.section-networks-->
+        <!-- End Social Networks section -->
+
+    </main><!-- /#main -->
+    <!-- End Main content -->
+
+    <!-- Footer -->
+    <footer id="colophon" class="site-footer">
+
+        <div class="container-fluid">
+
+            <ul class="list-unstyled list-inline">
+                <li class="page-scroll"><a href="#top">Home</a></li>
+                <li class="page-scroll"><a href="#intro">About</a></li>
+                <li class="page-scroll"><a href="#works">Projects</a></li>
+                <li class="page-scroll"><a href="#history">CV</a></li>
+
+            </ul>
+
+            <div class="page-scroll">
+                <a href="#top" class="rectangle">
+                    <i class="fa fa-angle-double-up"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="container text-center">
+            <p class="copyright">&copy; <a href="http://pixelperfect.mk/" target="_blank">Mohamed Ajimi</a> - 2023</p>
+        </div>
+
+    </footer><!-- /#footer -->
+    <!-- End Footer -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery core js | Do not Delete -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap core js | Do not Delete -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap progressbar JS -->
+    <script src="assets/js/bootstrap-progressbar.min.js"></script>
+
+    <!-- Count To JS -->
+    <script src="assets/js/jquery.countTo.min.js"></script>
+
+    <!-- Easing JS -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+    <!-- Shuffle JS -->
+    <script src="assets/js/jquery.shuffle.min.js"></script>
+
+    <!-- Slick Carousel JS -->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!-- Touchswipe JS -->
+    <script src="assets/js/touchswipe.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
