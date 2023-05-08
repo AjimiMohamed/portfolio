@@ -74,6 +74,8 @@ html, body {
   border-color: #196fc2;
 }
 
+
+
 /* 
  * Rectangle 
  */
@@ -425,7 +427,7 @@ html, body {
 /* HERO
 ================================================== */
 .hero {
-  background: url(../img/hero.jpg) center no-repeat;
+  background: url(../img/pexels-pixabay-255464.jpg) center no-repeat;
   height: 100%;
   width: 100%;
   display: table;
