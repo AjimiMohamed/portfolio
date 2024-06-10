@@ -298,44 +298,51 @@ h6 {
 }
 
 
-/* Intern */
-.btnintern{
-  background: #fff;
-  border: 2px solid #77c6fc;
-  margin-right: 10px;
-  padding: 7px 35px;
-  color: #77c6fc;
-  transition: 0.4s;
-  border-radius: 50px;
+/* Intern button styles */
+.btnintern {
+  background: #fff; /* White background */
+  border: 2px solid #77c6fc; /* Blue border */
+  margin-right: 10px; /* Right margin, consider adding margin to all sides if needed */
+  margin-bottom: 20px;
+  padding: 7px 35px; /* Padding for a better button shape */
+  color: #77c6fc; /* Blue text color matching the border */
+  transition: background-color 0.4s, color 0.4s; /* Smooth transition for background and text color */
+  border-radius: 50px; /* Fully rounded corners */
+  font-family: Arial, sans-serif; /* Adding a universal font family for consistency */
+  text-align: center; /* Center text alignment */
+  display: inline-block; /* Ensures the button respects padding and margin */
+  cursor: pointer; /* Pointer cursor on hover to indicate clickability */
 }
 
-.btnintern:hover{
-  background-color: #77c6fc;
-  color: #fff;
-  transition: 0.8s;
+.btnintern:hover {
+  background-color: #77c6fc; /* Blue background on hover */
+  color: #fff; /* White text on hover */
+  border-color: #77c6fc; /* Optional: change border color on hover if desired */
 }
 
-.img-intern{
+.img-intern {
   position: relative;
-  top: 25%;
+  top: 25%; /* Adjust top position as needed */
 }
 
+/* Desktop specific styles */
 @media (min-width: 1024px) {
   #hero {
-    background-attachment: fixed;
+    background-attachment: fixed; /* Fixed background on larger screens */
   }
 }
 
+/* Tablet and mobile specific styles */
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 28px; /* Smaller font size for smaller screens */
+    line-height: 36px; /* Appropriate line height for readability */
   }
 
   #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
+    font-size: 18px; /* Smaller font size for h2 as well */
+    line-height: 24px; /* Line height for h2 */
+    margin-bottom: 30px; /* Bottom margin for spacing */
   }
 }
 
